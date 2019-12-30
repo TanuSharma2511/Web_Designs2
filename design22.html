@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile Widget</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <style>
+         @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+    body{
+        margin:0;
+        padding:0;
+        background:#e6ff61;
+        font-family: arial;
+    }
+    .profile{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        width:300px;
+        height:450px;
+        background:#fff;
+        box-sizing: border-box;
+        border-radius:10px;
+        overflow:hidden;
+        box-shadow:0 20px 20px rgba(0,0,0,0.5);
+    }
+    .profile img{
+        width:100%;
+    }
+    .profile .view{
+        position:absolute;
+        bottom:30px;
+        left:50%;
+        transform:translateX(-50%);
+        margin:0;
+        padding:10px 10px;
+        background:#fff;
+        color:#262626;
+        border-radius: 15px;
+        text-transform:uppercase;
+        text-decoration: none;
+        font-size:12px;
+        font-weight:bold;
+    }
+    .view:hover{
+        text-decoration: underline;
+    }
+    .details{
+        height:50%;
+        width:100%;
+        background:#fff;
+        position:absolute;
+        bottom:30px;
+        text-align: center;
+        padding:20px;
+        box-sizing: border-box;
+        transition:.5s;
+        transform:perspective(500px) scale(0);
+        transform-origin: bottom;
+    }
+    .details.active{
+        bottom:0;
+        transform:perspective(500px) scale(1);
+    }
+    .details h2{
+        margin:0;
+        padding:0;
+        color:#607d8b;
+        font-size:18px;
+        text-transform:uppercase;
+    }
+    .details h2 span{
+        font-size:14px;
+        color:#ccc;
+    }
+    .details p{
+        margin:0;
+        padding:10px 0 0;
+        font-size:14px;
+        color:#aaa;
+
+    }
+    h3{
+        background:#00bcd4;
+        color:#fff;
+        padding:8px 50px;
+        border-radius:25px;
+        display:-webkit-inline-box;
+        cursor: pointer;
+    }
+    h3:hover{
+        opacity:0.7;
+    }
+    .details ul{
+        margin:0;
+        padding:0;
+        display:flex;
+
+    }
+    .details ul li{
+        list-style: none;
+        font-size:20px;
+        width:33.3%;
+    }
+    .details ul li:nth-child(1) .fa{
+        color:#3b5998;
+    }
+    .details ul li:nth-child(2) .fa{
+        color:#00aced;
+    }
+    .details ul li:nth-child(3) .fa{
+        color:#dd4b39;
+    }
+    .close{
+        font-size:20px;
+        position:absolute;
+        top:5px;
+        right:5px;
+        cursor: pointer;
+    }
+    .close .fa{
+        color:#dd4b39;
+    }
+    .details ul li .fa:hover{
+        transform:scale(1.4);
+    }
+    </style>
+</head>
+<body>
+    <div class="profile">
+       <img src="sakura.jpg" alt="">
+       <a href="#" class="view">View Profile</a>
+        <div class="details">
+            <h2>Someone Famous<br><span>Naruto Character</span></h2>
+            <p>Lorem . Aut l quibusdam dolorum molestias recusandae.</p>
+         <h3>Follow</h3>
+         <ul>
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+        </ul>
+        <div class="close">
+                <i class="fa fa-times-circle" aria-hidden="true"></i>
+        </div>
+
+        </div>
+    </div>
+    <script>
+    $(document).ready(function(){
+        $(".view").click(function(){
+            $(".details").addClass("active");
+        });
+        $(".close").click(function(){
+            $(".details").removeClass("active");
+        });
+    });
+    </script>
+</body>
+</html>

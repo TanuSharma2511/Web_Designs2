@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+     @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+    body{
+        background:#3b4172;
+        font-family:poppins;
+    }
+    .wrapper{
+        width:1170px;
+        margin:2% auto;
+    }
+    .section-header{
+        text-align:center;
+        margin-bottom:30px;
+    }
+    .section-header h2{
+        text-transform: uppercase;
+        margin: 0;
+        color:#fff;
+        font-size:45px;
+        letter-spacing: 5px;
+    }
+    .team-member{
+        width:29%;
+        height:auto;
+        float:left;
+        box-shadow:5px 5px 15px #000;
+        position: relative;
+        display:block;
+        overflow:hidden;
+        padding:15px;
+        text-align: center;
+        margin:0 5px;
+        background:#222859;
+    }
+    .team-member img{
+        width:200px;
+        height:200px;
+    }
+    .team-member h3{
+        margin:0;
+        text-transform: uppercase;
+        font-size:25px;
+        color:#fff;
+    }
+    .team-member p{
+        color:#fff;
+    }
+    .team-member:before{
+        position:absolute;
+        content:"";
+        left:0;
+        bottom:0;
+        height:4px;
+        width:100%;
+        border-bottom: 4px solid transparent;
+        border-left: 4px solid transparent;
+        box-sizing:border-box;
+        transform:translateX(100%);
+    }
+    .team-member:after{
+        position:absolute;
+        content:"";
+        left:0;
+        top:0;
+        height:4px;
+        width:100%;
+        border-top: 4px solid transparent;
+        border-right: 4px solid transparent;
+        box-sizing:border-box;
+        transform:translateX(100%);
+    }
+    .team-member:hover:before{
+        border-color: #d04f81;
+        height:100%;
+        transform:translateX(0);
+        transition:.3s transform linear,.3s height linear .3s;
+    }
+    .team-member:hover:after{
+        border-color: #d04f81;
+        height:100%;
+        transform:translateX(0);
+        transition:.3s transform linear,.3s height linear .5s;
+    }
+   .team-member ul{
+        /* display:flex;
+        text-decoration: none; */
+        list-style: none;
+        text-align: center;
+        width:100%;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+       
+   }
+  .team-member ul li{
+       width:45px;
+       height:45px;
+       background: linear-gradient(to right,#01a9ac,#01dbdf);
+       
+       margin-bottom:5px;
+       border-radius: 5px;
+       
+       
+       line-height: 45px;
+   }
+  .team-member ul li i{
+       color:#fff;
+        display:inline; 
+       font-size:18px;
+       transition: 0.5s;
+       cursor: pointer;
+
+       
+   }
+   
+   .team-member ul li:hover{
+       background: transparent;
+       
+   }
+   
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="section-header">
+            <h2>Our Team Members</h2>
+        </div>
+        <div class="team-member">
+            <img src="pp1.jpg" alt="">
+            <h3>John Doe</h3>
+            <p>UI / UX Designer</p>
+            <ul>
+                <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+            </ul>
+            </div>
+            <div class="team-member">
+                <img src="pp2.jpg" alt="">
+                <h3>John Doe</h3>
+                <p>UI / UX Designer</p>
+                <ul>
+                    <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                </ul>
+            </div>
+                <div class="team-member">
+                    <img src="pp3.jpg" alt="">
+                    <h3>John Doe</h3>
+                    <p>UI / UX Designer</p>
+                    
+                    <ul>
+                        <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                    </ul>
+                
+        </div>
+    </div>
+</body>
+</html>

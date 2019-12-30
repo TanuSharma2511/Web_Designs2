@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            min-height:100vh;
+            background: #222;
+            font-family:sans-serif;
+    
+        }
+        .container{
+            width: 1200px;
+            height:auto;
+            margin:0 auto;
+            display:grid;
+            grid-template-columns: repeat(auto-fit,minmax(20px,1fr));
+            grid-gap:10px;
+            padding:10px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .container .box{
+            position:relative;
+            background:#222;
+            padding:20px 40px 40px;
+            text-align: center;
+            overflow:hidden;
+            border:4px solid #fff;
+            transition:0.4s ;
+            
+        }
+       
+        .container .box:hover{
+            background:#e91e63;
+        }
+        
+        .container .box img{
+        width:100%;
+            
+            
+        }
+        
+        .container .box img{
+            border:10px solid #f8f8f8;
+            border-radius:50%;
+            transition:all 0.3s ease 0s;
+            width:220px;
+            height:220px;
+            margin-left:-20px;
+            
+           
+        }
+       
+        .container .box h3{
+            margin:0;
+            padding:0;
+            color:#fff;
+            font-size:24px;
+            text-transform: uppercase;
+            margin-bottom:10px;
+        }
+        .container .box .border{
+            
+            width:100px;
+            border-bottom: 3px solid #37cfd7;
+            display: block;
+            margin:0 auto;
+            transition:all 0.3s ease 0s;
+            margin-bottom:10px;
+        }
+       
+        .container .box .border:after{
+            content:"";
+            width:50px;
+            display:block;
+            position:relative;
+            top:3px;
+            border-bottom: 3px solid #e91e63;
+        }
+        .container .box:hover .border{
+            
+            
+            width:50px;
+            background: #fff;
+        }
+        .container .box p{
+            margin:0;
+            padding:0;
+            color:#fff;
+            font-size:18px;
+            text-transform: uppercase;
+        }
+        </style>
+    <body>
+        <div class="container">
+            <div class="box">
+                
+                <div class="pic">
+                <img src="char1.jpg" alt="">
+            </div>
+                <h3>Williamson</h3>
+               <div class="border"></div>
+                
+                <p>Web Designer</p>
+            
+            </div>
+            <div class="box">
+                    <div class="pic">
+                <img src="char2.jpg" alt="">
+            </div>
+                <h3>Richard</h3>
+                <div class="border"></div>
+                <p>Web Designer</p>
+            </div>
+            <div class="box">
+                    <div class="pic">
+                <img src="char3.jpg" alt="">
+            </div>
+                <h3>Christina</h3>
+                <div class="border"></div>
+                <p>Web Designer</p>
+            </div>
+            <div class="box">
+                    <div class="pic">
+                <img src="char4.jpg" alt="">
+            </div>
+                <h3>Hermoini</h3>
+                <div class="border"></div>
+                <p>Web Designer</p>
+            </div>
+        </div>
+    </body>
+    </html>

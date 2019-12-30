@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    body{
+        display:flex;
+        justify-content: center;
+        text-align:center;
+        min-height:100vh;
+        background:#000;
+    }
+    .container{
+        width:1100px;
+        height:400px;
+        display:flex;
+        justify-content: space-between;
+    }
+    .container img{
+         max-width:350px;
+        transform-origin: center;
+        transform:perspective(800px) rotateY(20deg);
+        transition:0.5s;
+        -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0004);
+    }
+    .container:hover img{
+        opacity:0.1;
+    }
+    .container img:hover{
+        transform:perspective(800px) rotateY(0deg);
+        opacity:1;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="cast1.jpg" style="width:300px;">
+        <img src="cast2.jpg" style="width:300px;">
+        <img src="cast3.jpg" style="width:300px;">
+    </div>
+</body>
+</html>

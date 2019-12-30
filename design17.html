@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+         @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+    *{
+        margin:0;
+        padding:0;
+
+    }
+    body{
+        background:#242539;
+        font-family:sans-serif;
+    }
+    .wrapper{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+    }
+    .container{
+        width:300px;
+        height:420px;
+        background:#fff;
+        border-radius: 10px;
+    }
+    .img-container{
+        width:100%;
+        height:40%;
+        position:relative;
+
+    }
+    .img-container img.banner-img{
+        width:100%;
+        height:100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .img-container img.profile-img{
+        position:absolute;
+        width:100px;
+        height:100px;
+        border-radius:50%;
+        bottom:-32%;
+        left:100px;
+        border:5px solid #fff;
+
+    }
+    .share{
+        position: absolute;
+        top:10px;
+        right:10px;
+    }
+    .share ul{
+        list-style-type: none;
+    }
+    .share ul li{
+        width:35px;
+        height:35px;
+        margin-bottom:5px;
+        border-radius:50px;
+        border-radius: 50px;
+        border:2px solid #673887;
+        text-align: center;
+        cursor: pointer;
+        transition: all 1s ease;
+    }
+    .share ul li .fa{
+        line-height: 35px;
+        color:#673887;
+        transition:all 1s ease;
+    }
+    .share ul li:hover{
+        background:#673887;
+        
+    }
+    .share ul li:hover .fa{
+        color:#fff;
+
+    }
+    .content{
+        width:100%;
+        height:60%;
+        box-sizing: border-box;
+        padding:60px 50px 50px;
+        position: relative;
+    }
+    .title{
+        text-align:center;
+        color:#673887;
+        padding-bottom:35px;
+    }
+    .title p{
+        font-size:28px;
+        font-weight: 700;
+    }
+    .title span{
+        font-weight: 300;
+        font-size: 12px;
+    }
+    .follow{
+        border:2px solid #673887;
+        text-align: center;
+        border-radius:50px;
+        padding:10px;
+        color:#673887;
+        font-weight: 500;
+        text-transform: uppercase;
+        cursor:pointer;
+        transition: all 1s ease;
+    }
+    .follow:hover{
+        color:#fff;
+        background: #673887;
+    }
+    .heart:before{
+        content:"";
+        position: absolute;
+        bottom:0;
+        left:0;
+        border-left:30px solid #673887;
+        border-right:30px solid transparent;
+        border-top:30px solid transparent;
+        border-bottom:30px solid #673887;
+        border-bottom-left-radius: 8px;
+    }
+    .like:before{
+        content:"";
+        position: absolute;
+        bottom:0;
+        right:0;
+        border-right:30px solid #673887;
+        border-left:30px solid transparent;
+        border-top:30px solid transparent;
+        border-bottom:30px solid #673887;
+        border-bottom-right-radius: 8px;
+    }
+    .heart:after{
+        font-family:fontawesome;
+        content:"\f08a";
+        position:absolute;
+        bottom:10px;
+        left:10px;
+        color:#fff;
+    }
+    .like:after{
+        font-family:fontawesome;
+        content:"\f087";
+        position:absolute;
+        bottom:10px;
+        right:10px;
+        color:#fff;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="img-container">
+                <img src="scenery.jpg" alt="" class="banner-img">
+                <img src="tom.jpg" alt="" class="profile-img">
+               <div class="share">
+                   <ul>
+                        <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                   </ul>
+                </div>
+            </div>
+            <div class="content">
+                <div class="title">
+                <p>Mark Wood</p>
+                <span>UI Developer/Front End Developer</span>
+            </div>
+            <div class="follow">
+                follow
+            </div>
+            <div class="heart"></div>
+            <div class="like"></div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

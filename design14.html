@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+     @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+     *{
+         margin:0;
+         padding:0;
+         box-sizing:border-box;
+     }
+     body{
+         background:#81c644;
+         font-family: sans-serif;
+     }
+     .wrapper{
+         margin-top:10%;
+
+     }
+     .wrapper h1{
+         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         font-size:52px;
+         margin-bottom:50px;
+         text-align :center;
+     }
+     .team{
+         display: flex;
+         text-align: center;
+         width:auto;
+         justify-content: center;
+         flex-wrap: wrap;
+     }
+     .team .team_member{
+         background: #fff;
+         margin:5px;
+         margin-bottom:50px;
+         width:300px;
+         padding:20px;
+         line-height: 20px;
+         color:#8e8b8b;
+         position:relative;
+     }
+     .team .team_member h3{
+         color:#81c644;
+         font-size:26px;
+         margin-top:40px;
+
+     }
+     .team .team_member p.role{
+         color:#ccc;
+         font-size:12px;
+         text-transform: uppercase;
+         margin: 12px 0;
+     }
+     .team .team_member .team_img{
+         width:100px;
+         height:100px;
+         border-radius:50%;
+         position:absolute;
+         top:-50px;
+         left:50%;
+         transform:translateX(-50%);
+         background:#fff;
+     }
+     .team .team_member .team_img img{
+         width:100px;
+         height:100px;
+         border-radius:50%;
+         padding:10px;
+     }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Our Team</h1>
+
+        <div class="team">
+            <div class="team_member">
+                <div class="team_img">
+                    <img src="char1.jpg" alt="team_member_image">
+                </div>
+                <h3>Paul Doe</h3>
+                <p class="role">UI Developer</p>
+                <p>Sakura Haruno is th the bottom of her heart.She is hard-working and student of one of the sanin.She is very pretty ans smart.Sakura Haruno is the important charactor in the anime.</p>
+            </div>
+            <div class="team_member">
+                    <div class="team_img">
+                            <img src="char2.jpg" alt="team_member_image">
+                        </div>
+                <h3>Rosie Meg</h3>
+                <p class="role">Tester</p>
+                <p>Sakura Haruno is the important charactor in the anime named Naruto.She ise of the sanin.She is very pretty ans smart.Sakura Haruno is the important charactor in the anime named Naruto.She is best friend of Naruto.<p>
+            </div>
+            <div class="team_member">
+                    <div class="team_img">
+                            <img src="char3.jpg" alt="team_member_image">
+                        </div>
+                <h3>Stuar Little</h3>
+                <p class="role">Support Leader</p>
+                <p>Sakura Haruno is the important charactor in the anime named Naruto.She is best friend of Naruto.She loves Sasuke by the bottom of her h.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

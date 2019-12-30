@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="swiper.min.css">
+    <style>
+    body{
+        margin:0;
+        padding:0;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        min-height: 100vh;
+        background: #383838;
+        font-family: sans-serif;
+    }
+    .card{
+        position:relative;
+        background:#fff;
+        width:400px;
+        height:500px;
+        margin:0 auto;
+    }
+    .card .content{
+        width:400px;
+        padding:30px;
+        box-sizing:border-box;
+
+    }
+    .card .content a{
+        display:inline-block;
+        margin:10px 0 0;
+        padding:10px 20px;
+        text-decoration:none;
+        border:2px solid #262626;
+        color:#262626;
+        font-weight:600;
+    }
+    .card .sliderText{
+        position:relative;
+        width:100%;
+        height:200px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background:#000;
+    }
+    .card .sliderText h3{
+        color:#fff;
+        font-size:3em;
+    }
+    .swiper-slide{
+        width:400px;
+    }
+    .swiper-slide:nth-child(1) .sliderText{
+        background:#2196f3;
+    }
+    .swiper-slide:nth-child(2) .sliderText{
+        background:#e91e63;
+    }
+    .swiper-slide:nth-child(3) .sliderText{
+        background:#c3d41a;
+    }
+    .swiper-slide:nth-child(4) .sliderText{
+        background:#c33ada;
+    }
+    .swiper-slide:nth-child(5) .sliderText{
+        background:#219653;
+    }
+        </style>
+</head>
+<body>
+        <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    
+            <div class="swiper-slide">           
+            
+    <div class="card">
+        <div class="sliderText">
+            <h3>Slide One</h3>
+        </div>
+        <div class="content">
+            <p>Sakura Haruno is the important charactor in the anime named Naruto.She is best friend of Naruto.She loves Sasuke by the bottom of her heart.She is hard-working and student of one of the sanin.She is very pretty ans smart.</p>
+           <a href="#">Read More</a>
+        </div>
+    </div>
+    </div>
+    <div class="swiper-slide">           
+            
+            <div class="card">
+                <div class="sliderText">
+                    <h3>Slide Two</h3>
+                </div>
+                <div class="content">
+                    <p>Sakura Haruno is the important charactor in the anime named Naruto.She is best friend of Naruto.She loves Sasuke by the bottom of her heart.She is hard-working and student of one of the sanin.She is very pretty ans smart.</p>
+                   <a href="#">Read More</a>
+                </div>
+            </div>
+            </div>
+            <div class="swiper-slide">           
+            
+                    <div class="card">
+                        <div class="sliderText">
+                            <h3>Slide Three</h3>
+                        </div>
+                        <div class="content">
+                            <p>Sakura Haruno is the important charactor in the anime named Naruto.She is best friend of Naruto.She loves Sasuke by the bottom of her heart.She is hard-working and student of one of the sanin.She is very pretty ans smart.</p>
+                           <a href="#">Read More</a>
+                        </div>
+                    </div>
+                    </div>
+    <div class="swiper-slide">           
+            
+        <div class="card">
+            <div class="sliderText">
+                <h3>Slide Four</h3>
+                </div>
+                <div class="content">
+                <p>Sakura Haruno is the important charactor in the anime named Naruto.She is best friend of Naruto.She loves Sasuke by the bottom of her heart.She is hard-working and student of one of the sanin.She is very pretty ans smart.</p>
+                <a href="#">Read More</a>
+                </div>
+
+                </div>
+                </div> 
+                <div class="swiper-slide">           
+            
+                        <div class="card">
+                            <div class="sliderText">
+                                <h3>Slide Five</h3>
+                            </div>
+                            <div class="content">
+                                <p>Sakura Haruno is the important charactor in the anime named Naruto.She is best friend of Naruto.She loves Sasuke by the bottom of her heart.She is hard-working and student of one of the sanin.She is very pretty ans smart.</p>
+                               <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        </div>                               
+    </div>
+    </div>
+    <script src="swiper.min.js"></script>
+    <script>
+     var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 30,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+    </script>
+</body>
+</html>

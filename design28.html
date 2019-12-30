@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile Card</title>
+    <style>
+    @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+   *{
+       margin:0;
+       padding:0;
+       box-sizing: border-box;
+       list-style: none;
+       font-family:sans-serif;
+   }
+   body{
+       background:#58d4ff;
+       color: #555555;
+   }
+   .wrapper{
+       width:650px;
+       height:auto;
+       position:absolute;
+       top:50%;
+       left:50%;
+       transform:translate(-50%,-50%);
+       display:flex;
+   }
+   .wrapper .profile{
+       width:400px;
+       margin-right: 25px;
+   }
+   .wrapper .profile .profile_img_info{
+       display:flex;
+       background:#fff;
+       border-radius:10px;
+       margin-bottom: 25px;
+       box-shadow:0 1px 2px rgba(0,0,0,0.125);
+   }
+   .wrapper .profile .profile_img_info .img{
+       width:140px;
+   }
+   .wrapper .profile .profile_img_info .img img{
+       display:block;
+       width:100%;
+       border-top-left-radius: 10px;
+       border-bottom-left-radius: 10px;
+   }
+       .wrapper .profile .profile_img_info .info{
+           width:calc(100% - 125px);
+           padding:40px;
+       }
+       .wrapper .profile .profile_img_info .info p.name{
+           font-size:24px;
+           font-weight:700;
+           margin-bottom:5px;
+       }
+       .wrapper .profile .profile_img_info .info p.place{
+           font-weight:300;
+       }
+       .wrapper .profile .profile_img_info .info p.place span{
+           margin-right:5px;
+       }
+      .wrapper .profile .profile_skills{
+          background:#fff;
+          border-radius:10px;
+          padding:25px;
+          box-shadow:0 1px 2px rgba(0,0,0,0.125);
+      }
+      .wrapper .profile .profile_skills .skills{
+          padding-bottom: 20px;
+          border-bottom: 1px solid #cccccc;
+      }
+      .wrapper .profile .profile_skills .skills p{
+          text-transform:uppercase;
+          font-weight:700;
+          font-size:14px;
+          margin-bottom:10px;
+      }
+      .wrapper .profile .profile_skills .skills ul li{
+          font-size:30px;
+          margin-bottom:5px;
+      }
+      .wrapper .profile .profile_skills .skills ul li .fa{
+          width:40px;
+      }
+      .wrapper .profile .tags_wrap{
+          padding-top:20px;
+      }
+      .wrapper .profile .tags_wrap span.tag{
+          background:#e4e9ef;
+          padding:10px 15px;
+          display:inline-block;
+          border-radius:10px;
+          margin:5px;
+          font-size:14px;
+      }
+      .wrapper .profile_counts{
+          background:#fff;
+          padding:25px;
+          width:175px;
+          border-radius:10px;
+          box-shadow:0 1px 2px rgba(0,0,0,0.125);
+      }
+      .wrapper .profile_counts .profile_counts_wrap{
+          padding:30px 0;
+          border-bottom:1px solid #cccccc;
+
+
+      }
+      .wrapper .profile_counts .profile_counts_wrap:first-child{
+          padding-top:0;
+      }
+      .wrapper .profile_counts .profile_counts_wrap:last-child{
+          padding-bottom:0;
+          border-bottom: 0;
+      }
+      .wrapper .profile_counts .profile_counts_wrap .item{
+          padding:20px 10px;
+          text-align:center;
+          border-radius:10px;
+          cursor:pointer;
+          transition:all 0.2s ease;
+      }
+      .wrapper .profile_counts .profile_counts_wrap .item:hover{
+          background:#e4e9ef;
+      }
+      .wrapper .profile_counts .profile_counts_wrap .item .fa{
+          font-size:30px;
+          margin-bottom:20px;
+      }
+      .wrapper .profile_counts .profile_counts_wrap .item .title{
+          font-size:14px;
+      }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="profile">
+            <div class="profile_img_info">
+              <div class="img">
+                  <img src="cast4.jpg" alt="">
+              </div>
+              <div class="info">
+                  <p class="name">Emma Stone</p>
+                  <p class="place"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>New York</p>
+              </div>
+            </div>
+            <div class="profile_skills">
+             <div class="skills">
+                 <p>Skills</p>
+                 <ul>
+                     <li>
+                       <span class="icon">
+                        <i class="fa fa-html5" aria-hidden="true"></i>
+                       </span>
+                       <span class="title">HTML5</span>
+                     </li>
+                     <li>
+                        <span class="icon">
+                            <i class="fa fa-css3" aria-hidden="true"></i>
+                        </span>
+                        <span class="title">CSS</span>
+                      </li>
+                      <li>
+                        <span class="icon">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                        </span>
+                        <span class="title">Code</span>
+                      </li>
+                 </ul>
+             </div>
+             <div class="tags_wrap">
+                 <span class="tag">Web Development</span>
+                 <span class="tag">Web Designs</span>
+                 <span class="tag">UI/UX</span>
+                 <span class="tag">Backend Development</span>
+             </div>
+            </div>
+        </div>
+        <div class="profile_counts">
+            <div class="profile_counts_wrap">
+                <div class="item">
+                    <div class="icon"><i class="fa fa-thumbs-up" aria-hidden="true"></i></div>
+                    <div class="title">320 Likes</div>
+                </div>
+                </div>
+                <div class="profile_counts_wrap">
+                <div class="item">
+                    <div class="icon"><i class="fa fa-eye" aria-hidden="true"></i></div>
+                    <div class="title">2983 Views</div>
+                </div>
+                </div>
+                <div class="profile_counts_wrap">
+                <div class="item">
+                    <div class="icon"><i class="fa fa-comment" aria-hidden="true"></i></div>
+                    <div class="title">117 Comments</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

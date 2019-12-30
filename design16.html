@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+     @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+    *{
+        margin: 0;
+        padding:0;
+        font-family: sans-serif;
+    }
+    body{
+        background:#009688;
+    }
+    .container{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        overflow: :hidden;;
+    }
+    .profile-card{
+        display:flex;
+        flex-direction: row;
+        background: #f3f3f3;
+        box-shadow: 0px 12px 24px -9px rgba(0,0,0,0.75);
+        border-radius:3px;
+        padding:30px 20px;
+    }
+    .image-container{
+        width:100px;
+        text-align: center;
+    }
+    .image-container img{
+        width:100px;
+        border-radius: 80%;
+        border:4px solid #fff;
+        box-shadow: 0px 12px 24px -9px rgba(0,0,0,0.75);
+
+    }
+    .text-container{
+        width:300px;
+        margin-left:20px;
+    }
+    .text-container h1{
+        font-size: 20px;
+        font-weight: normal;
+        letter-spacing: 2px;
+    }
+    .text-container h3{
+        font-size: 18px;
+        font-style: italic;
+        color:#009688;
+        margin-top:5px;
+    }
+    .text-container p{
+        margin-top:10px;
+        font-size:14px;
+        letter-spacing: 1px;
+        color:#6a6b6b;
+
+    }
+    .card-bottom{
+        background: #f3f3f3;
+        height:50px;
+        width:420px;
+        position: relative;
+        box-shadow: 0px 17px 24px -9px rgba(0,0,0,0.75);
+        margin-top:-2px;
+        margin-left:20px;
+        z-index: -1;
+        border-radius: 3px;
+        
+    }
+    .card-bottom ul{
+        list-style-type: none;
+        text-align: center;
+        width:100%;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+    }
+    .card-bottom ul li{
+        display:inline;
+        margin:15px;
+
+    }
+    .card-bottom ul li i{
+        color:#6a6b6b;
+        font-size:20px;
+        padding:0 10px;
+        cursor:pointer;
+        transition:0.5s ease;
+
+    }
+    .card-bottom ul li i:hover{
+         color:#009688;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <div class="image-container">
+                <img src="man.jpg" alt="Man">
+
+            </div>
+            <div class="text-container">
+                <h1>Mellan E.Brown</h1>
+                <h3>UI/UX Designer</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit ggyg sehguy gye sewsy6tgy. </p>
+            </div>
+        </div>
+        <div class="card-bottom">
+        <ul>
+            <li><i class="fa fa-html5" aria-hidden="true"></i></li>
+            <li><i class="fa fa-css3" aria-hidden="true"></i></li>
+            <li><i class="fa fa-wordpress" aria-hidden="true"></i></li>
+            <li><i class="fa fa-database" aria-hidden="true"></i></li>
+            <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+        </ul>
+        </div>
+    </div>
+</body>
+</html>

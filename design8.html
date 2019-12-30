@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+        margin:0;
+        padding:0;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        min-height:100vh;
+        background: #222;
+        font-family:sans-serif;
+
+    }
+    .container{
+        width: 1200px;
+        height:auto;
+        margin:0 auto;
+        display:grid;
+        grid-template-columns: repeat(auto-fit,minmax(20px,1fr));
+        grid-gap:10px;
+        padding:10px;
+        box-sizing: border-box;
+    }
+    .container .box{
+        position:relative;
+        background:#fff;
+        padding:20px 40px 40px;
+        text-align: center;
+        overflow:hidden;
+        border-radius:20px;
+    }
+    .container .box:nth-child(1){
+        background:linear-gradient(45deg,#036eb7,#64eaff);
+    }
+    .container .box:nth-child(2){
+        background:linear-gradient(45deg,#e91e63,#ed55ff);
+    }
+    .container .box:nth-child(3){
+        background:linear-gradient(45deg,#086d35,#00ff72);
+    }
+    .container .box:nth-child(4){
+        background:linear-gradient(45deg,#f05a4f,#f4c030);
+    }
+    .container .box h2{
+        position: relative;
+        margin:0;
+        padding:0;
+        font-size:100px;
+        color:#fff;
+        z-index:1;
+        opacity:0.4;
+    }
+    .container .box h3{
+        margin:0;
+        padding:0;
+        color:#fff;
+        font-size:24px;
+        text-transform: uppercase;
+    }
+    .container .box p{
+        margin:0;
+        padding:0;
+        color:#fff;
+        font-size:18px;
+        text-transform: uppercase;
+    }
+    </style>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>1</h2>
+            <h3>Service One</h3>
+            <p>Greta Leaders are really great .THey spend all their life for the elfare of the other people properly.Greta Leaders are really great .THey spend all their life for the elfare of the other people properly.</p>
+        </div>
+        <div class="box">
+            <h2>2</h2>
+            <h3>Service Two</h3>
+            <p>Greta Leaders are really great .THey spend all their life for the elfare of the other people properly.Greta Leaders are really great .THey spend all their life for the elfare of the other people properly.</p>
+        </div>
+        <div class="box">
+            <h2>3</h2>
+            <h3>Service Three</h3>
+            <p>Greta Leaders are really great .THey spend all their life for the elfare of the other people properly.Greta Leaders are really great .THey spend all their life for the elfare of the other people properly.</p>
+        </div>
+        <div class="box">
+            <h2>4</h2>
+            <h3>Service Four</h3>
+            <p>Greta Leaders are really great .THey spend all their life for the elfare of the other people properly.Greta Leaders are really great .THey spend all their life for the elfare of the other people properly.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <style>
+     @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+    *{
+        margin:0;
+        padding:0;
+    }
+     body{
+         background:#dedfe1;
+         font-family: sans-serif;
+     }
+     .wrapper{
+         position:absolute;
+         top:50%;
+         left:50%;
+         transform:translate(-50%,-50%);
+     }
+     .container{
+         width:450px;
+         height:200px;
+         background:#fff;
+         border-radius:5px;
+         box-shadow:0 0 10px rgba(0,0,0,0.5);
+
+     }
+     .img-container{
+         width:40%;
+         height:100%;
+         float:left;
+         position:relative;
+     }
+     .img-container img{
+         width:100%;
+         height:100%;
+         border-top-left-radius: 5px;
+         border-bottom-left-radius: 5px;
+     }
+     .img-container:before{
+         content:"";
+         position:absolute;
+         top:0;
+         left:0;
+         border-left:30px solid #1da1f2;
+         border-right:30px solid transparent;
+         border-top:30px solid #1da1f2;
+         border-bottom:30px solid transparent;
+         cursor: pointer;
+         border-top-left-radius: 5px;
+     }
+     .img-container:after{
+         font-family:fontawesome;
+         content:"\f099";
+         position:absolute;
+         top:10px;
+         left:12px;
+         color:#fff;
+         font-size:18px;
+     }
+     .img-container:hover{
+         transform:scale(1.1);
+     }
+     .content{
+         width:60%;
+         height:100%;
+         float:left;
+         padding:30px 40px;
+         box-sizing: border-box;
+     }
+     .head{
+         padding-bottom:30px;
+     }
+     .head p{
+         font-size:28px;
+         color:#444444;
+         font-weight:600;
+     }
+     .head span{
+         color:#aaabaf;
+         font-size:14px;
+     }
+     .data{
+         width:90%;
+
+     }
+     .inner-data{
+         width:50%;
+         float:left;
+         text-align:left;
+         color:#aaabaf;
+     }
+     .inner-data p{
+         font-size:14px;
+         padding-bottom:5px;
+     }
+     .inner-data span{
+         font-size:18px;
+         font-weight:400px;
+     }
+     .floating-icon{
+         position: absolute;
+         width:50px;
+         height:50px;
+         border-radius:50%;
+         background:#1da1f2;
+         cursor:pointer;
+         top:38%;
+         right:-5%;
+     }
+     .floating-icon .fa{
+         position: absolute;
+         left:18px;
+         top:15px;
+         color:#fff;
+         font-size:20px;
+         transition:all 1s ease;
+     }
+     .btn{
+         position: absolute;
+         top:10px;
+         right:10px;
+         text-transform:uppercase;
+         font-size:12px;
+         background:#1da1f2;
+         padding:6px 15px;
+         border-radius:50px;
+         color:#fff;
+         cursor:pointer;
+         font-weight: 600;
+         transition:all 1s ease;
+         opacity:0;
+         margin-bottom:5px;
+     }
+     .floating-icon:hover .btn{
+        opacity: 1;
+     } 
+      
+     /* .floating-icon .fa .active{
+         transform:rotateX(45deg);
+         transition:all 1s ease;
+     } */
+     .floating-icon:hover .fa{
+        transform:rotateZ(45deg);
+         transition:all 1s ease;
+         
+     } 
+     
+     /* .btn .active{
+         opacity:1;
+     } */
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="img-container">
+                <img src="tom.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="head">
+                    <p>Tom Cruise</p>
+                    <span>@TomCruise</span>
+                </div>
+                <div class="data">
+                    <div class="inner-data">
+                        <p>following</p>
+                        <span>55.5k</span>
+                    </div>
+                    <div class="inner-data">
+                        <p>followers</p>
+                        <span>6.95m</span>
+                    </div>
+                </div>
+            </div>
+            <div class="floating-icon">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </div> 
+            <div class="btn">
+                follow
+            </div>
+        </div>
+    </div>
+    
+</body>
+<!-- <script src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function(){
+       $(".floating-icon").click(function(){
+           $(this).toggleClass("active");
+           $(".btn").toggleClass("active");
+       });
+    });
+  </script> -->
+</html>

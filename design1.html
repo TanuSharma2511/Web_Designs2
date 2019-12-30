@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: sans-serif;
+    }
+    .product-card{
+        width:380px;
+        position:relative;
+        margin:50px auto;
+        box-shadow:0 2px 7px #dfdfdf;
+    }
+    .badge{
+        position:absolute;
+        left:0;
+        top:20px;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight:700;
+        background: red;
+        color:#fff;
+        padding:3px 10px;
+    }
+    .product-details{
+        background:#f0f0f0;
+    }
+    .product-tumb{
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        height:300px;
+        padding:50px;
+        background: #797676;
+    }
+    .product-tumb img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .product-category{
+        display:block;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color:rgb(95, 92, 92);
+        margin-bottom: 18px;
+
+
+    }
+    .product-details h4 a{
+        font-weight: 500;
+        display:block;
+        margin-bottom: 18px;
+        text-transform: uppercase;
+        color:#363636;
+        text-decoration: none;
+        transition:0.3s;
+    }
+    .product-details h4 a:hover{
+        color:#fbb72c;
+    }
+    .product-details p{
+        font-size:15px;
+        line-height:22px;
+        margin-bottom:18px;
+        color:#999;
+    }
+    .product-bottom-details{
+        overflow:hidden;
+        border-top:1px solid #eee;
+        padding-top:20px;
+    }
+    .product-bottom-details div{
+        float:left;
+        width:50%;
+    }
+    .product-price{
+        font-size:18px;
+        color:#fbb72c;
+        font-weight: 600;
+    }
+    .product-price small{
+        font-size:80%;
+        font-weight: 400;
+        text-decoration: line-through;
+        display: inline block;
+        margin-right: 5px;
+    }
+    .product-links{
+        text-align: right;
+    }
+    .product-links a{
+        display:inline-block;
+        margin-left:5px;
+        color:#645b5b;
+        transition: 0.3s;
+        font-size:17px;
+
+    }
+    .product-links a:hover{
+        color:#fbb72c;
+    }
+    </style>
+</head>
+<body>
+    <div class="product-card">
+        <div class="badge">Hot</div>
+        <div class="product-tumb">
+            <img src="images.jpg" alt="">
+        </div>
+        <div class="product-details">
+            <span class="product-category">Women-bag</span>
+            <h4><a href="">Women Leather Bag</a></h4>
+            <p>Women bags are now a days very very popular among the women in the country.</p>
+            <div class="product-bottom-details">
+                <div class="product-price"><small>$96.00</small>$230.99</div>
+                <div class="product-links">
+                    <a href=""><i class="fa fa-heart" aria-hidden="true"></i></a>
+                    <a href="">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

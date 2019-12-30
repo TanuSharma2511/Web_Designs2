@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Custom Checkbox</title>
+    <style>
+     @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+    *{
+        margin:0;
+        padding:0;
+        list-style-type: none;
+        box-sizing: border-box;
+        font-family:sans-serif;
+    }   
+    body{
+        background:#574b90;
+    }
+    .wrapper{
+        max-width:350px;
+        padding:10px;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+    }
+    .container .title{
+        font-size:20px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color:#fff;
+    }
+    .container ul li{
+        display:flex;
+        align-items: center;
+        margin-bottom:15px;
+        color:#fff;
+        font-size:14px;
+        line-height: 22px;
+    }
+    .container ul li .wrap{
+        margin-right:10px;
+        max-width:25px;
+        width:100%;
+        height:25px;
+        border:2px solid #fff;
+        display: block;
+        position: relative;
+        cursor:pointer;
+    }
+    .container ul li .wrap .input{
+        position: absolute;
+        top:0;
+        left:0;
+        opacity:0;
+        
+
+    }
+    .container ul li .wrap .checkmark{
+        position: absolute;
+        top:-1px;
+        left:-1px;
+        width:23px;
+        height:23px;
+        background:#fff;
+        display: none;
+    }
+    .container ul li .wrap .checkmark:before{
+        content:"";
+        position: absolute;
+        top:5px;
+        left:5px;
+        width:10px;
+        height:4px;
+        border:2px solid;
+        border-color: transparent transparent #574b90 #574b90;
+        transform:rotate(-45deg);
+    }
+    .container ul li .wrap .input:checked ~ .checkmark{
+        display:block;
+    } 
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="title">
+                Learn How To
+            </div>
+            <ul>
+                <li>
+                    <label class="wrap">
+                        <input type="checkbox" class="input">
+                        <span class="checkmark"></span>
+                    </label>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam expe.</p>
+                </li>
+                <li>
+                    <label class="wrap">
+                        <input type="checkbox" class="input">
+                        <span class="checkmark"></span>
+                    </label>
+                    <p>Lorem ipsum dolor sit amet consectetur adip, Quibusdam expe.</p>
+                </li>
+                <li>
+                    <label class="wrap">
+                        <input type="checkbox" class="input">
+                        <span class="checkmark"></span>
+                    </label>
+                    <p>Lorem ipsum dolor sit amet consectetur adipis expe.</p>
+                </li>
+                <li>
+                    <label class="wrap">
+                        <input type="checkbox" class="input">
+                        <span class="checkmark"></span>
+                    </label>
+                    <p>Lorem ipsum dolor sit amet .</p>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</body>
+</html>

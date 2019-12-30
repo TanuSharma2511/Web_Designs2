@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    font-family:sans-serif;
+    background:#262626;
+        }
+        .testinomials{
+            margin:150px auto 100px;
+            display:grid;
+            grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+            grid-gap:20px;
+     }
+    .testinomials .card{
+        position:relative;
+        width:350px;
+        margin:200px auto;
+        background:#333;
+        padding:20px;
+        box-sizing: border-box;
+        text-align: center;
+        box-shadow:0 10px 40px rgba(0,0,0,0.5);
+         overflow: hidden; 
+    } 
+    .testinomials .card .layer{
+        position:absolute;
+        top:calc(100% - 2px);
+        left:0;
+        width:100%;
+        height:100%;
+        background:linear-gradient(#03a9f4,#e91ee3);
+        z-index:1;
+        transition:0.5s;
+    }
+    .testinomials .card:hover .layer{
+        top:0;
+    }
+    .testinomials .card .content{
+        position: relative;
+        z-index:2;
+    }
+    .testinomials .card .content p{
+        font-size: 18px;
+        line-height: 24px;
+        color:#fff;
+    }
+    .testinomials .card .content .image{
+        width:100px;
+        height:100px;
+        margin:0 auto;
+        border-radius:50%;
+        overflow: hidden;
+        border:4px solid #fff;
+        box-shadow:0 10px 20px rgba(0,0,0,0.3);
+    }
+    img{
+        width:100%;
+    }
+    .testinomials .card .content .details h2{
+        font-size:18px;
+        color:#fff;
+    }
+    .testinomials .card .content .details h2 span{
+        color:#03a9f4;
+        font-size:14px;
+        transition:0.5s;
+    }
+    .testinomials .card:hover .content .details h2 span{
+        color:#fff;
+    }
+    </style>
+</head>
+<body>
+    <div class="testinomials">
+        <div class="card">
+            <div class="layer"></div>
+            <div class="content">
+                <p>Great Leaders are really great .THey spend all their life for the elfare of the other people properly.</p>
+           <div class="image">
+               <img src="p1.jpg">
+           </div>
+           <div class="details">
+               <h2>Someone Famous<br><span>Great Leaders</span></h2>
+           </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="layer"></div>
+            <div class="content">
+                <p>Greta Leaders are really great .THey spend all their life for the elfare of the other people properly.</p>
+           <div class="image">
+               <img src="p2.jpg">
+           </div>
+           <div class="details">
+               <h2>Someone Famous<br><span>Great Leaders</span></h2>
+           </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="layer"></div>
+            <div class="content">
+                <p>Greta Leaders are really great .THey spend all their life for the elfare of the other people properly.</p>
+           <div class="image">
+               <img src="p3.jpg">
+           </div>
+           <div class="details">
+               <h2>Someone Famous<br><span>Great Leaders</span></h2>
+           </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

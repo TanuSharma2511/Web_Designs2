@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        list-style-type: none;
+        font-family:sans-serif;
+    }
+    body{
+        background:#212131;
+        font-size:14px;
+        line-height: 24px;
+    }
+    .wrapper{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        background:#313142;
+        width:800px;
+        height:600px;
+        display:flex;
+        border-radius:15px;
+
+
+    }
+    .wrapper .wrapper_left{
+        width:250px;
+        background:#393952;
+        padding:0 25px;
+        display:flex;
+        align-items: center;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        box-shadow:10px 0 13px 0px rgba(41,41,57,0.7);
+    }
+    .wrapper .wrapper_left ul li{
+        background:#313142;
+        margin-bottom:25px;
+        border-radius: 3px;
+        padding:12px 25px;
+        text-transform: uppercase;
+        font-weight: 500;
+        position:relative;
+        width:200px;
+        letter-spacing: 2px;
+        transition:all 0.4s ease;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    .wrapper .wrapper_left ul li p{
+        color:#abaacd;
+        position:relative;
+    }
+    .wrapper .wrapper_left ul li:before{
+        content:"";
+        position:absolute;
+        top:0;
+        left:0;
+        width:5px;
+        height:100%;
+        background:#5437b7;
+        background:linear-gradient(126deg,rgba(2,0,36,1) 0%,rgba(123,90,231,1) 0%,rgba(88,54,206,1) 100%);
+        border-radius:5px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        transition:all 0.4s ease;
+    }
+    .wrapper .wrapper_left ul li:last-child{
+        margin-bottom:0;
+    }
+    .wrapper .wrapper_left ul li.active{
+        width:250px;
+    }
+    .wrapper .wrapper_left ul li.active p{
+        color:#fff;
+    }
+    .wrapper .wrapper_left ul li.active:before{
+        width:100%;
+        transition:all 0.2s ease;
+    }
+    .wrapper_right{
+        width:550px;
+        padding:30px 50px;
+    }
+    .wrapper_right .title{
+        font-size:24px;
+        text-align:center;
+        font-weight:700;
+        color:#6b6b93;
+        margin-bottom:20px;
+        text-transform:uppercase;
+    }
+    .wrapper_right .item .item_info{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .wrapper_right .item .item_info .img{
+        width:200px;
+        height:200px;
+        background:#fff;
+        border-radius:50%;
+        margin-bottom:20px;
+        position:relative;
+        overflow: hidden;
+    }
+    .wrapper_right .item .item_info .img:before{
+        content:"";
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        /* background:url("angular.png") no-repeat 0 0;
+        width: 94px;
+        height:101px; */
+    }
+    .wrapper_right .item.angular .item_info .img:before{
+        background:url("angular.png") no-repeat 0 0;
+        width:200px;
+        height:200px;
+        align-items: center;
+        margin-left:-12px;
+        margin-top:-10px;
+    }
+    .wrapper_right .item.nodejs .item_info .img:before{
+        background:url("node.jpg") no-repeat 0 0;
+        width:100%;
+        height:120px;
+        align-items: center;
+        margin-right:-11px;
+        margin-top:-10px;
+        
+    }
+    .wrapper_right .item.reactjs .item_info .img:before{
+        background:url("react.png") no-repeat 0 0;
+        width:120px;
+        height:120px;
+        align-items: center;
+        margin-right:-12px;
+        margin-bottom:-10px;
+       
+    }
+    .wrapper_right .item.vuejs .item_info .img:before{
+        background:url("vue.png") no-repeat 0 0;
+        width:145px;
+        height:100px;
+        align-items: center;
+      
+       
+    }
+    .wrapper .wrapper_right .item .item_info p{
+        background:#fff;
+        width:150px;
+        border-radius: 5px;
+        padding:10px;
+        color:#abaacd;
+        font-weight:700;
+        text-transform:uppercase;
+        text-align:center;
+    }
+    .wrapper_right .item.angular .item_info p{
+        color:#dd0330;
+    }
+    .wrapper_right .item.nodejs .item_info p{
+        color:#8bc500;
+    }
+    .wrapper_right .item.reactjs .item_info p{
+        color:#61dafb;
+    }
+    .wrapper_right .item.vuejs .item_info p{
+        color:#41b883;
+    }
+    .wrapper_right .item p{
+        color:#fff;
+        margin-bottom:20px;
+
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrapper_left">
+            <ul>
+                <li data-li="angular" class="active">
+                    <p>Angular</p>
+                </li>
+                <li data-li="nodejs">
+                    <p>Node.js</p>
+                </li>
+                <li data-li="reactjs">
+                    <p>React.js</p>
+                </li>
+                <li data-li="vuejs">
+                    <p>Vue.js</p>
+                </li>
+            </ul>
+        </div>
+        <div class="wrapper_right">
+            <div class="title">
+                Top Javascript Frameworks
+            </div>
+            <div class="container">
+                <div class="item angular">
+                   <div class="item_info">
+                       <div class="img"></div>
+                       <p>Angular</p>
+                   </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate suscipit totam dolore animi ullam natus dolores eum obcaecati recusandae! Unde suscipit quis doloremque non fugiat possimus itaque nesciunt praesentium molestiae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quas consequuntur sed nam doloremque ex saepe recusandae fugit? Porro ex ut tempora eligendi accusantium. Quo ducimus dolorem quidem odit eos.</p>
+                </div>
+                <div class="item nodejs" style="display:none;">
+                    <div class="item_info">
+                        <div class="img"></div>
+                        <p>Nodejs</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate suscipit totam dolore animi ullam natus dolores eum obcaecati recusandae! Unde suscipit quis doloremque non fugiat possimus itaque nesciunt praesentium molestiae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quas consequuntur sed nam doloremque ex saepe recusandae fugit? Porro ex ut tempora eligendi accusantium. Quo ducimus dolorem quidem odit eos.</p>
+                </div>
+                <div class="item reactjs" style="display:none;">
+                    <div class="item_info">
+                        <div class="img"></div>
+                        <p>reactjs</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate suscipit totam dolore animi ullam natus dolores eum obcaecati recusandae! Unde suscipit quis doloremque non fugiat possimus itaque nesciunt praesentium molestiae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quas consequuntur sed nam doloremque ex saepe recusandae fugit? Porro ex ut tempora eligendi accusantium. Quo ducimus dolorem quidem odit eos.</p>
+                </div>
+                <div class="item vuejs" style="display:none;">
+                    <div class="item_info">
+                        <div class="img"></div>
+                        <p>vuejs</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate suscipit totam dolore animi ullam natus dolores eum obcaecati recusandae! Unde suscipit quis doloremque non fugiat possimus itaque nesciunt praesentium molestiae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quas consequuntur sed nam doloremque ex saepe recusandae fugit? Porro ex ut tempora eligendi accusantium. Quo ducimus dolorem quidem odit eos.</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script>
+    
+    var li_elements=document.querySelectorAll(".wrapper_left ul li");
+    var item_elements=document.querySelectorAll(".item");   
+    for(var i=0;i<li_elements.length;i++){
+        li_elements[i].addEventListener("click",function(){
+            li_elements.forEach(function(li){
+                li.classList.remove("active");
+            });
+            this.classList.add("active");
+            var li_value=this.getAttribute("data-li");
+            item_elements.forEach(function(item){
+                item.style.display="none";
+            });
+if(li_value=="angular"){
+   document.querySelector("." + li_value).style.display="block";
+}
+else if(li_value=="nodejs"){
+    document.querySelector("." + li_value).style.display="block";
+}
+else if(li_value=="reactjs"){
+    document.querySelector("." + li_value).style.display="block"; 
+}
+else if(li_value=="vuejs"){
+    document.querySelector("." + li_value).style.display="block"; 
+}
+else{
+  console.log("");
+}
+
+        });
+    }
+    </script>
+</body>
+</html>

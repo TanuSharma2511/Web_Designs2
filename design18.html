@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+     @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+   html,body{
+        width:100%;
+        height:100vh;
+   }
+   body{
+       background-image: radial-gradient(circle,#32aa87,#16392f);
+   }
+   
+   .container.card{
+       width:340px;
+       height:480px;
+       background-color: #fff;
+       border-radius: 10px;
+       position: relative;
+       left:50%;
+       top:50%;
+       transform:translate(-50%,-50%);
+       box-shadow:0px 0px 30px #000;
+       overflow:hidden;
+
+   }
+   .card{
+       text-align: center;
+   }
+   .card .cover{
+       width:100%;
+       height:160px;
+       background-image:url(green1.jpg);
+       background-size: cover;
+       background-position: center;
+       position:relative;
+
+   }
+   .card .user-pic{
+       width:120px;
+       height:120px;
+       border-radius:50%;
+       position:absolute;
+       bottom:-60px;
+       left:calc(50% - 60px);
+       box-shadow:0px 0px 0px 4px #fff;
+   }
+   .card .content{
+       width:100%;
+       height:220px;
+       /* height:calc(580px - 460px); */
+       /* padding:80px 10px 10px 10px; */
+       padding: 30px 10px 10px 10px;
+       text-align:center;
+   }
+   .card .content h4{
+       font-size:28px;
+       color:#5ba58d;
+       font-weight: 900;
+       
+   }
+   .card .content h5{
+       font-size:20px;
+       
+       color:#888;
+   }
+   .card .social-btn a{
+       margin:2px;
+       display: inline-block;
+       width:36px;
+       height:36px;
+       text-align:center;
+       line-height:36px;
+       background:#5ba58d;
+       border-radius:50%;
+       color:#fff;
+       margin-bottom:10px;
+    
+
+   }
+   .card .btnTheme{
+       padding:7px 14px;
+       display:inline-block;
+       width:200px;
+       border-radius:5px;
+       background:#5ba58d;
+       font-family:sans-serif;
+       color:#fff;
+       text-decoration:none;
+       font-size:18px;
+       
+   }
+   .card .hidden-content{
+       position: absolute;
+       width:100%;
+       height:100%;
+       top:0px;
+       padding:20px;
+       text-align:center;
+       font-family:sans-serif;
+       font-size:18px;
+       color:#fff;
+       opacity:0;
+       transition:all .6s ease;
+       z-index:98;
+   }
+   
+   .card:hover .hidden-content{
+       top:0px;
+       transition-delay:.3s;
+       opacity:1;
+       text-align: center;
+   }
+   .card:hover::after{
+       transform:rotate(0deg);
+   }
+   .card::after{
+       position:absolute;
+       content:"";
+       width:100%;
+       height:100%;
+       left:0px;
+       top:0px;
+       border-radius:10px;
+       background-color: #5ba58d;
+       transform:rotate(135deg);
+       transform-origin: 260px 480px;
+       transition:all .6s ease;
+       z-index:97;
+
+   }
+   .card .bottomBtn{
+       position:absolute;
+       font-size:24px;
+       z-index: 99;
+       color:#fff;
+       opacity:1;
+      
+       bottom:10px;
+       right:10px;
+       transition:all .3s ease;
+   }
+    </style>
+</head>
+<body>
+    <div class="container card">
+      <div class="cover">
+       <img src="tom.jpg" class="user-pic" alt="">
+     
+    </div>
+    <div class="content">
+        <h4>USER FULL NAME</h4>
+        <h5>FULL STACK DEVELOPER</h5>
+    
+    
+    <div class="social-btn">
+        
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>  
+        
+    
+        <div class="btnTheme">FOLLOW</div>
+    </div>
+    <div class="hidden-content">
+        <p>
+            Lorem, ipsum dolor sit amet conse adipisicing elit. Necessitatibus pers illum aspernatur alias? Quae aliquam vero optio, possimus, numquam animi bla excepturi fugit magnam officiis aperiam atque tempore molestias earum.
+      <br><br>
+      or,<br>
+      You can make social links here.
+        </p>
+    </div>
+    <i class="fa fa-heart bottomBtn"></i>
+</div>
+</body>
+</html>
